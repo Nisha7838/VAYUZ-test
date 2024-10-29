@@ -116,29 +116,41 @@ class ApiController extends BaseController
         }
     }
 
-    public function getUsers($page = 1)
-    {
-        $userModel = new UserModel();
+    public function getUsers()
+{
+    $userModel = new UserModel();
+    
+    
+    $page = $this->request->getGet('page') ?? 1; 
+    $perPage = 10; 
 
-        
-        $recordsPerPage = 10;
-        
-        
-        $offset = ($page - 1) * $recordsPerPage;
-        
-        
-        $users = $userModel->where('role','customer')->orderBy('id', 'ASC')
-                        ->findAll($recordsPerPage, $offset);
+    
+    $offset = ($page - 1) * $perPage;
 
-        return $this->response->setStatusCode(200)->setJSON($users);
-    }
+    
+    $users = $userModel->limit($perPage, $offset)->findAll();
+
+    
+    $totalUsers = $userModel->countAll();
+
+    return $this->response->setStatusCode(200)->setJSON([
+        'page' => (int) $page,
+        'per_page' => $perPage,
+        'total_users' => $totalUsers,
+        'total_pages' => ceil($totalUsers / $perPage),
+        'data' => $users,
+    ]);
+}
+
 
 
     public function updateUser($id)
     {
-        $userModel = new UserModel();
-        $data = $this->request->getJSON();
+        
         $authHeader = $this->request->getHeader('Authorization');
+       
+        $data = $this->request->getJSON();
+        
 
         if ($authHeader) {
             $decoded = $this->verifyJWTToken($authHeader);
@@ -166,13 +178,14 @@ class ApiController extends BaseController
             return $this->response->setStatusCode(400)->setJSON(['errors' => $this->validator->getErrors()]);
         }
     
-        
+        $userModel = new UserModel();
         $updateData = [
             'first_name' => $data->first_name,
             'last_name' => $data->last_name,
             'email' => $data->email,
         ];
-    
+        
+        
         
         if (isset($data->password) && !empty($data->password)) {
             $updateData['password'] = password_hash($data->password, PASSWORD_DEFAULT);
