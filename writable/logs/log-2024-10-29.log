@@ -1,0 +1,289 @@
+CRITICAL - 2024-10-29 15:21:33 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "auth/login.php"
+[Method: GET, Route: /]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('auth/login.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('auth/login', [], true)
+ 3 APPPATH\Controllers\LoginController.php(12): view('auth/login')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\LoginController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\VAYUZ-test\\public\\index.php')
+CRITICAL - 2024-10-29 15:22:26 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "auth/login.php"
+[Method: POST, Route: login]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('auth/login.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('auth/login', [], true)
+ 3 APPPATH\Controllers\LoginController.php(54): view('auth/login')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\LoginController->login()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\VAYUZ-test\\public\\index.php')
+CRITICAL - 2024-10-29 16:22:33 --> Error: Call to undefined method App\Controllers\ApiController::failUnauthorized()
+[Method: POST, Route: api/login]
+in APPPATH\Controllers\ApiController.php on line 35.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ApiController->login()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApiController))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\VAYUZ-test\\public\\index.php')
+CRITICAL - 2024-10-29 16:27:08 --> Error: Call to undefined method App\Controllers\ApiController::respond()
+[Method: POST, Route: api/login]
+in APPPATH\Controllers\ApiController.php on line 27.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ApiController->login()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApiController))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\VAYUZ-test\\public\\index.php')
+CRITICAL - 2024-10-29 16:27:35 --> Error: Call to undefined method App\Controllers\ApiController::respond()
+[Method: POST, Route: api/login]
+in APPPATH\Controllers\ApiController.php on line 26.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ApiController->login()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApiController))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\VAYUZ-test\\public\\index.php')
+CRITICAL - 2024-10-29 16:38:19 --> Error: Call to undefined method App\Controllers\ApiController::respond()
+[Method: POST, Route: api/login]
+in APPPATH\Controllers\ApiController.php on line 35.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ApiController->login()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApiController))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\VAYUZ-test\\public\\index.php')
+CRITICAL - 2024-10-29 16:39:13 --> Error: Call to undefined method App\Controllers\ApiController::respond()
+[Method: POST, Route: api/login]
+in APPPATH\Controllers\ApiController.php on line 35.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ApiController->login()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApiController))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\VAYUZ-test\\public\\index.php')
+CRITICAL - 2024-10-29 16:53:13 --> Error: Call to undefined method App\Controllers\ApiController::respond()
+[Method: POST, Route: api/login]
+in APPPATH\Controllers\ApiController.php on line 39.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ApiController->login()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApiController))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\VAYUZ-test\\public\\index.php')
+CRITICAL - 2024-10-29 16:53:21 --> Error: Call to undefined method App\Controllers\ApiController::respond()
+[Method: POST, Route: api/login]
+in APPPATH\Controllers\ApiController.php on line 39.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ApiController->login()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApiController))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\VAYUZ-test\\public\\index.php')
+CRITICAL - 2024-10-29 16:53:32 --> Error: Call to undefined method App\Controllers\ApiController::respond()
+[Method: POST, Route: api/login]
+in APPPATH\Controllers\ApiController.php on line 39.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ApiController->login()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApiController))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\VAYUZ-test\\public\\index.php')
+CRITICAL - 2024-10-29 16:54:34 --> Error: Call to undefined method App\Controllers\ApiController::respond()
+[Method: POST, Route: api/login]
+in APPPATH\Controllers\ApiController.php on line 38.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ApiController->login()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApiController))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\VAYUZ-test\\public\\index.php')
+CRITICAL - 2024-10-29 16:55:27 --> Error: Call to undefined method App\Controllers\ApiController::respond()
+[Method: POST, Route: api/login]
+in APPPATH\Controllers\ApiController.php on line 38.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ApiController->login()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApiController))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\VAYUZ-test\\public\\index.php')
+CRITICAL - 2024-10-29 16:57:37 --> Error: Call to undefined method App\Controllers\ApiController::respond()
+[Method: POST, Route: api/login]
+in APPPATH\Controllers\ApiController.php on line 38.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ApiController->login()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApiController))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\VAYUZ-test\\public\\index.php')
+CRITICAL - 2024-10-29 16:58:34 --> Error: Call to undefined method App\Controllers\ApiController::respond()
+[Method: POST, Route: api/login]
+in APPPATH\Controllers\ApiController.php on line 39.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ApiController->login()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApiController))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\VAYUZ-test\\public\\index.php')
+CRITICAL - 2024-10-29 16:59:54 --> Error: Call to undefined method App\Controllers\ApiController::respond()
+[Method: POST, Route: api/login]
+in APPPATH\Controllers\ApiController.php on line 40.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ApiController->login()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApiController))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\VAYUZ-test\\public\\index.php')
+CRITICAL - 2024-10-29 17:04:43 --> ErrorException: Array to string conversion
+[Method: POST, Route: api/login]
+in APPPATH\Controllers\ApiController.php on line 54.
+ 1 APPPATH\Controllers\ApiController.php(54): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'C:\\xampp\\htdocs\\VAYUZ-test\\app\\Controllers\\ApiController.php', 54)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ApiController->login()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApiController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\VAYUZ-test\\public\\index.php')
+CRITICAL - 2024-10-29 17:25:41 --> Error: Call to undefined function App\Controllers\verifyJWTToken()
+[Method: POST, Route: api/register]
+in APPPATH\Controllers\ApiController.php on line 80.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ApiController->register()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApiController))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\VAYUZ-test\\public\\index.php')
+CRITICAL - 2024-10-29 17:27:39 --> Error: Call to undefined function App\Controllers\verifyJWTToken()
+[Method: POST, Route: api/register]
+in APPPATH\Controllers\ApiController.php on line 80.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ApiController->register()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApiController))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\VAYUZ-test\\public\\index.php')
+CRITICAL - 2024-10-29 17:28:41 --> Error: Call to undefined function App\Controllers\verifyJWTToken()
+[Method: POST, Route: api/register]
+in APPPATH\Controllers\ApiController.php on line 83.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ApiController->register()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApiController))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\VAYUZ-test\\public\\index.php')
+CRITICAL - 2024-10-29 17:29:16 --> Error: Call to undefined function App\Controllers\verifyJWTToken()
+[Method: POST, Route: api/register]
+in APPPATH\Controllers\ApiController.php on line 83.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ApiController->register()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApiController))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\VAYUZ-test\\public\\index.php')
+CRITICAL - 2024-10-29 17:30:49 --> Error: Call to undefined function App\Controllers\verifyJWTToken()
+[Method: POST, Route: api/register]
+in APPPATH\Controllers\ApiController.php on line 85.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ApiController->register()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApiController))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\VAYUZ-test\\public\\index.php')
+CRITICAL - 2024-10-29 17:31:19 --> Error: Call to undefined function App\Controllers\verifyJWTToken()
+[Method: POST, Route: api/register]
+in APPPATH\Controllers\ApiController.php on line 85.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ApiController->register()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApiController))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\VAYUZ-test\\public\\index.php')
+CRITICAL - 2024-10-29 17:31:41 --> Error: Call to undefined function App\Controllers\verifyJWTToken()
+[Method: POST, Route: api/register]
+in APPPATH\Controllers\ApiController.php on line 85.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ApiController->register()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApiController))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\VAYUZ-test\\public\\index.php')
+CRITICAL - 2024-10-29 17:32:57 --> Error: Call to undefined function App\Controllers\verifyJWTToken()
+[Method: POST, Route: api/register]
+in APPPATH\Controllers\ApiController.php on line 85.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ApiController->register()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApiController))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\VAYUZ-test\\public\\index.php')
+CRITICAL - 2024-10-29 17:34:16 --> Error: Call to undefined function App\Controllers\verifyJWTToken()
+[Method: POST, Route: api/register]
+in APPPATH\Controllers\ApiController.php on line 84.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ApiController->register()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApiController))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\VAYUZ-test\\public\\index.php')
+CRITICAL - 2024-10-29 17:37:03 --> Error: Call to undefined function App\Controllers\verifyJWTToken()
+[Method: POST, Route: api/register]
+in APPPATH\Controllers\ApiController.php on line 84.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ApiController->register()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApiController))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\VAYUZ-test\\public\\index.php')
+ERROR - 2024-10-29 17:42:05 --> Token verification failed: Unexpected control character found
+ERROR - 2024-10-29 17:42:12 --> Token verification failed: Unexpected control character found
+CRITICAL - 2024-10-29 19:32:06 --> Error: Call to undefined function App\Controllers\verifyJWTToken()
+[Method: POST, Route: api/register]
+in APPPATH\Controllers\ApiController.php on line 84.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ApiController->register()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApiController))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\VAYUZ-test\\public\\index.php')
+CRITICAL - 2024-10-29 19:32:11 --> Error: Call to undefined function App\Controllers\verifyJWTToken()
+[Method: POST, Route: api/register]
+in APPPATH\Controllers\ApiController.php on line 84.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ApiController->register()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApiController))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\VAYUZ-test\\public\\index.php')

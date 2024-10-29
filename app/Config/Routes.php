@@ -25,3 +25,9 @@ $routes->group('admin', function($routes) {
 
 $routes->get('logout', 'LogoutController::index');
 
+//for api router
+$routes->post('/api/login', 'ApiController::login');
+$routes->post('/api/register', 'ApiController::register');
+$routes->get('/api/users/(:num)', 'ApiController::getUsers/$1'); 
+$routes->post('/api/user/update/(:num)', 'ApiController::updateUser/$1');
+

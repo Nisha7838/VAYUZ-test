@@ -7,15 +7,17 @@
             <div class="card-header">Login</div>
 
             <div class="card-body">
-                <form method="POST" action="<?= site_url('login') ?>">
+                <form id="loginForm" method="POST" action="<?= site_url('login') ?>">
                     <?= csrf_field() ?>
                     
+                    <!-- Display success message if any -->
                     <?php if (session()->getFlashdata('success')): ?>
                         <div class="alert alert-success">
                             <?= session()->getFlashdata('success') ?>
                         </div>
                     <?php endif; ?>
 
+                    <!-- Display error message if any -->
                     <?php if (session()->getFlashdata('error')): ?>
                         <div class="alert alert-danger">
                             <?= session()->getFlashdata('error') ?>
@@ -36,10 +38,11 @@
                         <button type="submit" class="btn btn-primary">Submit</button>
                     </div>
                 </form>
-
             </div>
         </div>
     </div>
 </div>
+
+
 
 <?= $this->endSection() ?>
