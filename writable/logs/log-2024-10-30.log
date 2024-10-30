@@ -1,0 +1,23 @@
+CRITICAL - 2024-10-30 10:21:54 --> ArgumentCountError: Too few arguments to function App\Controllers\ApiController::generateJWT(), 1 passed in C:\xampp\htdocs\VAYUZ-test\app\Controllers\ApiController.php on line 40 and exactly 2 expected
+[Method: POST, Route: api/login]
+in APPPATH\Controllers\ApiController.php on line 59.
+ 1 APPPATH\Controllers\ApiController.php(40): App\Controllers\ApiController->generateJWT([...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ApiController->login()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApiController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\VAYUZ-test\\public\\index.php')
+CRITICAL - 2024-10-30 10:39:36 --> ArgumentCountError: print_r() expects at least 1 argument, 0 given
+[Method: GET, Route: api/dashboard]
+in APPPATH\Controllers\ApiController.php on line 243.
+ 1 APPPATH\Controllers\ApiController.php(243): print_r()
+ 2 APPPATH\Controllers\ApiController.php(220): App\Controllers\ApiController->verifyJWTToken(Object(CodeIgniter\HTTP\Header))
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ApiController->dashboard()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApiController))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\VAYUZ-test\\public\\index.php')

@@ -4,6 +4,8 @@ namespace App\Controllers;
 
 use App\Controllers\BaseController;
 use App\Models\UserModel;
+use App\Libraries\UserLibrary;
+use Config\AppConfig;
 use Firebase\JWT\JWT;
 use Firebase\JWT\Key;
 
@@ -37,7 +39,9 @@ class ApiController extends BaseController
            
             if ($user && password_verify($password, $user['password'])) {
                 
-                $token = $this->generateJWT($user['id'], $user['email']);
+                $token = $this->generateJWT($user['id'], $user['email'],$user['role'],$user['last_login']);
+
+                
 
                
                 $responseData = [
@@ -56,19 +60,21 @@ class ApiController extends BaseController
     }
 
     
-    private function generateJWT($userId, $email)
+    private function generateJWT($userId, $email,$role,$last_login)
     {
         $payload = [
             'iat' => time(), // Issued at
             'exp' => time() + 3600, // Expiration time (1 hour)
             'user_id' => $userId,
             'email' => $email,
+            "role"=>$role,
+            "last_role"=>$last_login
         ];
 
         return JWT::encode($payload, $this->key, 'HS256'); 
     }
 
-    
+    //  /api/register
     public function register()
     {
         $authHeader = $this->request->getHeader('Authorization');
@@ -115,7 +121,8 @@ class ApiController extends BaseController
             return $this->response->setStatusCode(500)->setJSON(['error' => 'An error occurred: ' . $e->getMessage()]);
         }
     }
-
+ 
+    // /api/users
     public function getUsers()
 {
     $userModel = new UserModel();
@@ -143,7 +150,7 @@ class ApiController extends BaseController
 }
 
 
-
+    //  /api/user/update/(:num)
     public function updateUser($id)
     {
         
@@ -197,16 +204,46 @@ class ApiController extends BaseController
         return $this->response->setStatusCode(200)->setJSON(['message' => 'User updated successfully']);
     }
     
+    // /api/dashboard
+    public function dashboard()
+    {
+       
+        $authHeader = $this->request->getHeader('Authorization');
+        
+        if (!$authHeader) {
+            return $this->response->setStatusCode(401)->setJSON(['error' => 'Authorization header not found']);
+        }
+
+        
+        try {
+    
+            $decoded = $this->verifyJWTToken($authHeader);
+            $role = $decoded->role ?? null;
+
+            if (!$role) {
+                return $this->response->setStatusCode(403)->setJSON(['error' => 'Invalid token or role not found']);
+            }
+
+            if ($role === 'admin') {
+                
+                return $this->adminDashboard();
+            }
+            else{
+                return $this->customerDashboard();
+            }
+        } catch (\Exception $e) {
+            return $this->response->setStatusCode(401)->setJSON(['error' => 'Token is invalid or expired']);
+        }
+    }
 
 
 
     private function verifyJWTToken($authHeader)
     {
         
-        
-        $token = str_replace("Authorization: ", "", $authHeader);
-        $token = str_replace('Bearer ', '', $token);
 
+        $token = str_replace('Bearer ', '',$authHeader->getValue());
+       
         try {
            
             $decoded = JWT::decode($token, new Key($this->key, 'HS256'));
@@ -216,6 +253,30 @@ class ApiController extends BaseController
            
             return false; 
         }
+    }
+
+    public function adminDashboard()
+    {
+        $userLibrary = new UserLibrary();
+
+        $totalUsers = $userLibrary->countTotalUsers();
+        $recentUsers = $userLibrary->getLastFiveUsers();
+        $config = new AppConfig();
+
+        
+        return $this->response->setStatusCode(200)->setJSON([
+            'totalUsers' => $totalUsers,
+            'recentUsers' => $recentUsers,
+            'project_name' => $config->appName,
+        ]);
+    }
+
+    public function customerDashboard()
+    {
+        $config = new AppConfig();
+        return $this->response->setStatusCode(200)->setJSON([
+            'project_name' => $config->appName,
+        ]);
     }
     
 }

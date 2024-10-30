@@ -30,4 +30,6 @@ $routes->post('/api/login', 'ApiController::login');
 $routes->post('/api/register', 'ApiController::register');
 $routes->get('/api/users', 'ApiController::getUsers'); 
 $routes->post('/api/user/update/(:num)', 'ApiController::updateUser/$1');
+$routes->get('/api/dashboard', 'ApiController::dashboard');
+
 
